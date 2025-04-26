@@ -1,0 +1,48 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "target": "es2018",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "vite.config.ts",
+    "src/**/*",
+    "functions/index.js"
+  ],
+  "exclude": [
+    "node_modules",
+    ".git",
+    "src/server/.next",
+    "src/server/.yarn",
+    ".yarn",
+    "build",
+    "dev"
+  ],
+}

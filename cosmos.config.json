@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json.schemastore.org/cosmos-config",
+  "lazy": false,
+  "staticPath": "public",
+  "watchDirs": [
+    "src",
+    "public"
+  ],
+  "globalImports": [
+    "src/styles/index.css"
+  ],
+  "plugins": [
+    "react-cosmos-plugin-vite"
+  ],
+  "ignore": [
+    "**/build/**",
+    "**/dev/**",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/.git"
+  ],
+  "vite": {
+    "configPath": "vite.config.ts"
+  },
+  "ui": {
+    "router": {
+      "initialFixtureId": {
+        "path": "src/index.fixture.tsx"
+      }
+    },
+    "responsivePreview": {
+      "devices": [
+        {
+          "label": "iPhone 5/SE",
+          "width": 320,
+          "height": 568
+        },
+        {
+          "label": "iPhone 6/7/8",
+          "width": 375,
+          "height": 667
+        },
+        {
+          "label": "iPhone 6/7/8 Plus",
+          "width": 414,
+          "height": 736
+        },
+        {
+          "label": "iPhone X",
+          "width": 375,
+          "height": 812
+        },
+        {
+          "label": "iPad",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "label": "Samsung Galaxy S8+",
+          "width": 360,
+          "height": 740
+        },
+        {
+          "label": "Small",
+          "width": 800,
+          "height": 600
+        },
+        {
+          "label": "Medium",
+          "width": 1024,
+          "height": 768
+        },
+        {
+          "label": "Small Laptop",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "label": "Laptop",
+          "width": 1366,
+          "height": 768
+        },
+        {
+          "label": "Large Laptop",
+          "width": 1600,
+          "height": 900
+        },
+        {
+          "label": "Large",
+          "width": 1440,
+          "height": 900
+        },
+        {
+          "label": "HD 1080p",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "UHD 2560p",
+          "width": 2560,
+          "height": 1440
+        }
+      ]
+    }
+  }
+}
